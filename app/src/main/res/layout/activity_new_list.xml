@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.ekene.blogzone.NewTaskActivity">
+
+        <ImageButton
+            android:id="@+id/imageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_img"
+            tools:adjustViewBounds="true" />
+
+        <EditText
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layoutstyle"
+            android:hint="List Title"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textDesc"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/layoutstyle"
+            android:gravity="top|left"
+            android:hint="List Description"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="13dp"
+            android:singleLine="false"
+            android:textColor="#000" />
+
+        <Switch
+            android:id="@+id/hasLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layoutstyle"
+            android:padding="13dp"
+            android:text="Enable Location"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/hasTimestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layoutstyle"
+            android:padding="13dp"
+            android:text="Enable Timestamp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorPrimary"
+            android:text="Add List"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ekene.blogzone.MainActivity">
+    <item
+        android:id="@+id/action_del"
+        android:orderInCategory="100"
+        android:title="Delete List"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/add_task"
+        android:title="Add"
+        app:showAsAction="always" />
+
+</menu>
